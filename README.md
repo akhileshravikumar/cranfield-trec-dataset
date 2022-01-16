@@ -9,16 +9,18 @@
   - [5. Where can I find Cranfield collection in the original (non TREC) format ?](#5-where-can-i-find-cranfield-collection-in-the-original-non-trec-format-)
 
 # :bookmark_tabs: Cranfield collection in TREC XML format
-A repo to share the Cranfield collection composed by **documents**, **queries** and **relevance judgments** (*Qrels*) in the TREC format. This one suppose that documents and queries (also known as topics) are written in XML format.
+A repository to share the Cranfield collection composed by **documents**, **queries** and **relevance judgments** (*Qrels*) in TREC format. TREC format considers documents and queries (also known as topics) in **XML**.
 
-TREC format is commonly used in **Information Retrieval (IR)** systems and compaigns. Hence, this repo can help to get started with *indexing*, *retrieval* and *evaluation* tasks that are performed in TREC and CLEF compaigns and conferences.
+TREC format is commonly used in **Information Retrieval (IR)** systems and campaigns. Hence, this repository can help to get started with *indexing*, *retrieval* and *evaluation* tasks that are performed in TREC and CLEF conferences.
 
-:warning: We suggest to experiment with Cranfield for learning purpose only. The collection (having 1 400 documents) is not so reliable when compared with Big Data IR collections that are used nowadays.
+:warning: We suggest experimenting with Cranfield _for learning purpose only_. Indeed, the collection (having only 1 400 documents) is not so reliable when compared with Big Data IR collections that are used nowadays.
 
-The new TREC formatted Cranfield collection can be experimented using [Terrier platform](http://terrier.org/)
+>:bulb: The new TREC formatted Cranfield collection available in this repository can be experimented using [Terrier platform](http://terrier.org/)
+>
+>I prepared a [detailed tutorial here :computer:](https://github.com/oussbenk/information-retrieval-tutorial-terrier-cranfield)
 
 ## 1. What is Cranfield dataset ?
-A small corpus of **1 400 scientific abstracts** and **225 queries**. It is considerd among the first Information Retrieval initiatives to perform IR tasks in the 1960s.
+A small corpus of **1 400 scientific abstracts** and **225 queries**. It is considered among the first Information Retrieval initiatives to perform IR tasks in the 1960s.
 
 ## 2. Documents
 Documents are transformed in TREC XML format using common tags. Documents are delimited by ``<doc></doc>`` tags.
@@ -48,7 +50,7 @@ Tags definitions :
 - **title** : Document title
 - **author** : Document author(s)
 - **bib** : Bibliography
-- **text** : Main document content (the article Absctract)
+- **text** : Main document content (the article Abstract)
 
 ### 2.2. Sample of original Cranfield document
 ```
@@ -106,7 +108,7 @@ In the original Cranfield collection, relevance judgments were made in 5 levels 
 | 3 | References of a high degree of relevance, the lack of which <br>either would have made the research impracticable <br>or would have resulted in a considerable amount of extra work. | 734 | 40.0% |
 | 4 | References which are a complete answer to the question. | 363 | 19.8% |
 
-:warning: This way of assessing relevance was aborted in future TREC compaings as detailed in the following reference :
+:warning: This way of assessing relevance was aborted in future TREC campaings as detailed in the following reference :
 
 *Voorhees, Ellen M.* "The philosophy of information retrieval evaluation." Workshop of the cross-language evaluation forum for european languages. Springer, Berlin, Heidelberg, 2001.
 
@@ -129,7 +131,9 @@ Where :
  - **DOCNO** is the official document number that corresponds to the "docno" field in the documents, and
  - **RELEVANCY** is a binary code of 0 for not relevant and 1 for relevant.
 
-:white_check_mark: All initial relevancies having the score **1, 2, 3, or 4** are considered as relevant (**all replaced with 1 value**) in the new formatted Cranfield collection. However, **-1 non relavant** initial assessments are **replaced with 0**.
+ :page_facing_up: [From Official TREC reference](https://trec.nist.gov/data/qrels_eng/)
+
+:white_check_mark: All initial relevancies having the scores **1, 2, 3, or 4** are considered as relevant (**all replaced with 1 value**) in the new formatted Cranfield collection. However, **-1 non relavant** initial assessments are **replaced with 0**.
 
 **Sample of new Qrels in TREC format**
 
@@ -143,4 +147,4 @@ Where :
 
 
 ## 5. Where can I find Cranfield collection in the original (non TREC) format ?
-Cranfield collection can be downloaded in the original format (non TREC format) from he University of Glasgow website [here](http://ir.dcs.gla.ac.uk/resources/test_collections/cran/).
+Cranfield collection can be downloaded in the original format (non TREC format) from the University of Glasgow website [here](http://ir.dcs.gla.ac.uk/resources/test_collections/cran/).
