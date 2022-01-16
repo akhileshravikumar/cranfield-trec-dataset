@@ -18,6 +18,8 @@ TREC format is commonly used in **Information Retrieval (IR)** systems and campa
 >:bulb: The new TREC formatted Cranfield collection available in this repository can be experimented using [Terrier platform](http://terrier.org/)
 >
 >I prepared a [detailed tutorial here :computer:](https://github.com/oussbenk/information-retrieval-tutorial-terrier-cranfield)
+>
+>![Information Retrieval Tutorial using Terrier](https://github.com/oussbenk/information-retrieval-tutorial-terrier-cranfield/blob/main/screenshots/tutorial-terrier-340x80.jpg?raw=true)
 
 ## 1. What is Cranfield dataset ?
 A small corpus of **1 400 scientific abstracts** and **225 queries**. It is considered among the first Information Retrieval initiatives to perform IR tasks in the 1960s.
